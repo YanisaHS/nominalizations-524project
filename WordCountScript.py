@@ -1,4 +1,4 @@
-text = open("/Users/yanisa/Google Drive/School/Homework - Grad School/UofA/EN 613 SLA/Research Project/WritingTextFile.txt", "r")
+text = open("/Users/yanisa/GoogleDrive/School/Homework - Grad School/UofA/EN 613 SLA/Research Project/WritingTextFile.txt", "r")
 data = text.read()
 text.close()
 

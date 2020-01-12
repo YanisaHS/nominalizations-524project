@@ -1,4 +1,4 @@
-textFileNOMLEX = open("/Users/yanisa/Google Drive/Data/NOMLEX-plus.1.0.txt")
+textFileNOMLEX = open("/Users/yanisa/GoogleDrive/Data/NOMLEX-plus.1.0.txt")
 getNouns = []
 for line in textFileNOMLEX:
     if line.startswith("(NOM :ORTH"):
@@ -8,6 +8,6 @@ for line in textFileNOMLEX:
             finalNoun = finalNoun[:-1]
         getNouns.append(finalNoun)
 
-makeTxtFile = open("/Users/yanisa/Google Drive/Data/cleanNOMLEXPLUS.txt", "w")
+makeTxtFile = open("/Users/yanisa/GoogleDrive/Data/cleanNOMLEXPLUS.txt", "w")
 for noun in getNouns:
     makeTxtFile.write(noun + "\n")

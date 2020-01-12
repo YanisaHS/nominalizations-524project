@@ -50,7 +50,7 @@ def nomTracker(word):
 # Part Two: Open NOMLEX-PLUS as a list and cache it
 
 cachedNOMLEXPLUS = set()
-openNOMLEXPLUS = open("/Users/yanisa/Google Drive/Data/cleanNOMLEXPLUS.txt")
+openNOMLEXPLUS = open("/Users/yanisa/GoogleDrive/Data/cleanNOMLEXPLUS.txt")
 print("Loading texts...")
 for individualWordInNOMLEX in openNOMLEXPLUS:
     # Removie the formatting for a new line
@@ -59,7 +59,7 @@ for individualWordInNOMLEX in openNOMLEXPLUS:
 
 # Part Three: Run nlp function in spaCy on text to POS-tag it
 
-openTextFile = open("/Users/yanisa/Google Drive/School/Homework - Grad School/UofA/EN 524 English Structure/Texts/VisualPerformingArtsTexts.txt", "r")
+openTextFile = open("/Users/yanisa/GoogleDrive/School/Homework - Grad School/UofA/EN 524 English Structure/Texts/VisualPerformingArtsTexts.txt", "r")
 nlp = spacy.load("en_core_web_sm")
 nlp.max_length = 8000000
 textSamples = nlp(openTextFile.read())
