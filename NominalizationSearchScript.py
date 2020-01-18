@@ -59,7 +59,7 @@ for individualWordInNOMLEX in openNOMLEXPLUS:
 
 # Part Three: Run nlp function in spaCy on text to POS-tag it
 
-openTextFile = open("/Users/yanisa/GoogleDrive/School/Homework - Grad School/UofA/EN 524 English Structure/Texts/VisualPerformingArtsTexts.txt", "r")
+openTextFile = open("/Users/yanisa/GoogleDrive/School/Homework_GradSchool/UofA/EN 524 English Structure/Texts/VisualPerformingArtsTexts.txt", "r")
 nlp = spacy.load("en_core_web_sm")
 nlp.max_length = 8000000
 textSamples = nlp(openTextFile.read())
